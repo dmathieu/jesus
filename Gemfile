@@ -5,10 +5,17 @@ source "http://gemcutter.org"
 gem "sinatra"
 gem "god"
 gem "json"
+gem "rdiscount"
+
+gem "sdoc"
+gem "sdoc-helpers"
+
 
 #
 # Required only for tests
 #
-gem "rspec", :only => :testing
-gem "rack-test", :only => :testing
-gem "mocha", :only => :testing
+group :test do
+  gem "rspec"
+  gem "rack-test"
+  gem "mocha"
+end

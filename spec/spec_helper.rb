@@ -1,4 +1,3 @@
-require 'vendor/gems/environment'
 require 'sinatra'
 require 'rack/test'
 require 'spec'
