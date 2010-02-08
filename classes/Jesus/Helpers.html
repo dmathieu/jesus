@@ -43,9 +43,9 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000004">class_if_current</a>,</li>
+                <li><a href="#M000003">class_if_current</a>,</li>
                 
-                <li><a href="#M000008">confirm</a></li>
+                <li><a href="#M000007">confirm</a></li>
                 
             </ul>
         </dd>
@@ -54,9 +54,9 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000007">flash</a>,</li>
+                <li><a href="#M000006">flash</a>,</li>
                 
-                <li><a href="#M000006">flash_tag</a></li>
+                <li><a href="#M000005">flash_tag</a></li>
                 
             </ul>
         </dd>
@@ -65,7 +65,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000010">process_action</a></li>
+                <li><a href="#M000009">process_action</a></li>
                 
             </ul>
         </dd>
@@ -74,7 +74,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000009">show</a></li>
+                <li><a href="#M000008">show</a></li>
                 
             </ul>
         </dd>
@@ -83,7 +83,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000005">tab</a></li>
+                <li><a href="#M000004">tab</a></li>
                 
             </ul>
         </dd>
@@ -105,9 +105,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000004">
+                <div class="title" id="M000003">
                     
-                    <a name="M000004"></a><b>class_if_current</b>(link)
+                    <a name="M000003"></a><b>class_if_current</b>(link)
                     
                 </div>
                 
@@ -123,12 +123,12 @@ Is this menu link the current page ?
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000004_source')" id="l_M000004_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000003_source')" id="l_M000003_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L6" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000004_source" class="dyn-source">
+                    <div id="M000003_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 6</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">class_if_current</span>(<span class="ruby-identifier">link</span>)
       <span class="ruby-identifier">link</span> = <span class="ruby-value str">'^/$'</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">link</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'/'</span>
@@ -140,9 +140,9 @@ Is this menu link the current page ?
             </div>
             
             <div class="method">
-                <div class="title" id="M000008">
+                <div class="title" id="M000007">
                     
-                    <a name="M000008"></a><b>confirm</b>(message='Are you sure you want to do this ?')
+                    <a name="M000007"></a><b>confirm</b>(message='Are you sure you want to do this ?')
                     
                 </div>
                 
@@ -158,12 +158,12 @@ A confirmation, to be included in a link
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000008_source')" id="l_M000008_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000007_source')" id="l_M000007_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L32" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000008_source" class="dyn-source">
+                    <div id="M000007_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 32</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">confirm</span>(<span class="ruby-identifier">message</span>=<span class="ruby-value str">'Are you sure you want to do this ?'</span>)
       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;javascript:return confirm('&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">message</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;');&quot;</span>
@@ -174,9 +174,9 @@ A confirmation, to be included in a link
             </div>
             
             <div class="method">
-                <div class="title" id="M000007">
+                <div class="title" id="M000006">
                     
-                    <a name="M000007"></a><b>flash</b>(type, message)
+                    <a name="M000006"></a><b>flash</b>(type, message)
                     
                 </div>
                 
@@ -192,12 +192,12 @@ Defines a flash message
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000007_source')" id="l_M000007_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000006_source')" id="l_M000006_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L26" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000007_source" class="dyn-source">
+                    <div id="M000006_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 26</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">flash</span>(<span class="ruby-identifier">type</span>, <span class="ruby-identifier">message</span>)
       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">type</span>] = <span class="ruby-identifier">message</span>
@@ -208,9 +208,9 @@ Defines a flash message
             </div>
             
             <div class="method">
-                <div class="title" id="M000006">
+                <div class="title" id="M000005">
                     
-                    <a name="M000006"></a><b>flash_tag</b>(type)
+                    <a name="M000005"></a><b>flash_tag</b>(type)
                     
                 </div>
                 
@@ -226,12 +226,12 @@ The flash message tag
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000006_source')" id="l_M000006_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000005_source')" id="l_M000005_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L20" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000006_source" class="dyn-source">
+                    <div id="M000005_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 20</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">flash_tag</span>(<span class="ruby-identifier">type</span>)
       <span class="ruby-node">&quot;&lt;div id='flash'&gt;#{session.delete(type)}&lt;/div&gt;&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">session</span>[<span class="ruby-identifier">type</span>].<span class="ruby-identifier">nil?</span>
@@ -242,9 +242,9 @@ The flash message tag
             </div>
             
             <div class="method">
-                <div class="title" id="M000010">
+                <div class="title" id="M000009">
                     
-                    <a name="M000010"></a><b>process_action</b>(process)
+                    <a name="M000009"></a><b>process_action</b>(process)
                     
                 </div>
                 
@@ -260,12 +260,12 @@ Displays the actions links for a process
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000010_source')" id="l_M000010_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000009_source')" id="l_M000009_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L46" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000010_source" class="dyn-source">
+                    <div id="M000009_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 46</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">process_action</span>(<span class="ruby-identifier">process</span>)
       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">process</span>[<span class="ruby-value">1</span>][<span class="ruby-identifier">:state</span>]
@@ -282,9 +282,9 @@ Displays the actions links for a process
             </div>
             
             <div class="method">
-                <div class="title" id="M000009">
+                <div class="title" id="M000008">
                     
-                    <a name="M000009"></a><b>show</b>(page, layout = true)
+                    <a name="M000008"></a><b>show</b>(page, layout = true)
                     
                 </div>
                 
@@ -300,12 +300,12 @@ Displays an erb page
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000009_source')" id="l_M000009_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000008_source')" id="l_M000008_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L39" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000009_source" class="dyn-source">
+                    <div id="M000008_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 39</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>(<span class="ruby-identifier">page</span>, <span class="ruby-identifier">layout</span> = <span class="ruby-keyword kw">true</span>)
       <span class="ruby-identifier">erb</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">to_sym</span>, {<span class="ruby-identifier">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">layout</span>}
@@ -316,9 +316,9 @@ Displays an erb page
             </div>
             
             <div class="method">
-                <div class="title" id="M000005">
+                <div class="title" id="M000004">
                     
-                    <a name="M000005"></a><b>tab</b>(name, link)
+                    <a name="M000004"></a><b>tab</b>(name, link)
                     
                 </div>
                 
@@ -334,12 +334,12 @@ The menu link li
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000005_source')" id="l_M000005_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000004_source')" id="l_M000004_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/5b629ee60143d27dba2398f55d7eb4431eecfebb/lib/jesus/server/helpers.rb#L13" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000005_source" class="dyn-source">
+                    <div id="M000004_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/server/helpers.rb, line 13</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tab</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">link</span>)
       <span class="ruby-node">&quot;&lt;li #{class_if_current(link)}&gt;&lt;a href='#{link}'&gt;#{name}&lt;/a&gt;&lt;/li&gt;&quot;</span>

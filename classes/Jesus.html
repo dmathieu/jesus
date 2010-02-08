@@ -21,11 +21,13 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/jesus/interface_rb.html">lib/jesus/interface.rb</a></li>
+            <li><a href="../files/lib/jesus/config_rb.html">lib/jesus/config.rb</a></li>
+            
+            <li><a href="../files/lib/jesus/server_rb.html">lib/jesus/server.rb</a></li>
             
             <li><a href="../files/lib/jesus/server/helpers_rb.html">lib/jesus/server/helpers.rb</a></li>
             
-            <li><a href="../files/lib/jesus/server_rb.html">lib/jesus/server.rb</a></li>
+            <li><a href="../files/lib/jesus/interface_rb.html">lib/jesus/interface.rb</a></li>
             
         </ul>
     </div>
@@ -40,6 +42,29 @@
 
     
     
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>C</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000000">config</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>R</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000001">reset_config</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
 
     
 
@@ -50,6 +75,8 @@
     <ul>
         
         <li><span class="type">MODULE</span> <a href="Jesus/Helpers.html">Jesus::Helpers</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Jesus/Config.html">Jesus::Config</a></li>
         
         <li><span class="type">CLASS</span> <a href="Jesus/Interface.html">Jesus::Interface</a></li>
         
@@ -63,6 +90,64 @@
     
 
     
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000000">
+                    
+                    <a name="M000000"></a><b>config</b>(name)
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000000_source')" id="l_M000000_source">show</a>
+                        
+                        | <a href="http://github.com/dmathieu/jesus/blob/3c45d6b4eee42f962937b3dae8d25f395372be7e/lib/jesus/config.rb#L4" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000000_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/jesus/config.rb, line 4</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">config</span>(<span class="ruby-identifier">name</span>)
+    <span class="ruby-ivar">@config</span> = <span class="ruby-constant">Jesus</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>.<span class="ruby-identifier">load_config</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@config</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-keyword kw">return</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@config</span>[<span class="ruby-identifier">name</span>].<span class="ruby-identifier">nil?</span>
+    <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@config</span>[<span class="ruby-identifier">name</span>]
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000001">
+                    
+                    <a name="M000001"></a><b>reset_config</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000001_source')" id="l_M000001_source">show</a>
+                        
+                        | <a href="http://github.com/dmathieu/jesus/blob/3c45d6b4eee42f962937b3dae8d25f395372be7e/lib/jesus/config.rb#L10" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000001_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/jesus/config.rb, line 10</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">reset_config</span>
+    <span class="ruby-ivar">@config</span> = <span class="ruby-keyword kw">nil</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
 </div>
     </div>
   </body>
