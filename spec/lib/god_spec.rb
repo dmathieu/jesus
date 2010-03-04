@@ -28,8 +28,11 @@ describe "God interface" do
       status = @server.status
       
       status.length.should eql(2)
-      status['Group'].should eql({ :SecondProcess => { :status => :unmonitored, :group => "Group" }})
-      status['GroupName'].should eql({ :FirstProcess => { :status => :up, :group=>"GroupName"}})
+      status['Group'][:SecondProcess][:status].should eql(:unmonitored)
+      status['Group'][:SecondProcess][:group].should eql('Group')
+      
+      status['GroupName'][:FirstProcess][:status].should eql(:up)
+      status['GroupName'][:FirstProcess][:group].should eql('GroupName')
     end
   end
 end
