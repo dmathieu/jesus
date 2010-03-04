@@ -56,7 +56,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000012">command</a></li>
+                <li><a href="#M000005">command</a></li>
                 
             </ul>
         </dd>
@@ -65,7 +65,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000013">log</a></li>
+                <li><a href="#M000006">log</a></li>
                 
             </ul>
         </dd>
@@ -74,7 +74,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000010">new</a></li>
+                <li><a href="#M000003">new</a></li>
                 
             </ul>
         </dd>
@@ -83,7 +83,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000011">status</a></li>
+                <li><a href="#M000004">status</a></li>
                 
             </ul>
         </dd>
@@ -118,9 +118,9 @@
             <div class="sectiontitle">Class Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000010">
+                <div class="title" id="M000003">
                     
-                    <a name="M000010"></a><b>new</b>()
+                    <a name="M000003"></a><b>new</b>()
                     
                 </div>
                 
@@ -129,12 +129,12 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000010_source')" id="l_M000010_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000003_source')" id="l_M000003_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/95b9b10f13c65f1d9cbfacf3b68567852af0926b/lib/jesus/interface.rb#L10" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000010_source" class="dyn-source">
+                    <div id="M000003_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/interface.rb, line 10</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
         <span class="ruby-ivar">@server</span> = <span class="ruby-constant">DRbObject</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-constant">God</span><span class="ruby-operator">::</span><span class="ruby-constant">Socket</span>.<span class="ruby-identifier">socket</span>(<span class="ruby-constant">Jesus</span>.<span class="ruby-identifier">config</span>(<span class="ruby-value str">'god_port'</span>)))
@@ -147,9 +147,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000012">
+                <div class="title" id="M000005">
                     
-                    <a name="M000012"></a><b>command</b>(command, name)
+                    <a name="M000005"></a><b>command</b>(command, name)
                     
                 </div>
                 
@@ -167,12 +167,12 @@ We execute a specific command to god Could be &#8220;start&#8221;,
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000012_source')" id="l_M000012_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000005_source')" id="l_M000005_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/95b9b10f13c65f1d9cbfacf3b68567852af0926b/lib/jesus/interface.rb#L38" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000012_source" class="dyn-source">
+                    <div id="M000005_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/interface.rb, line 38</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">command</span>(<span class="ruby-identifier">command</span>, <span class="ruby-identifier">name</span>)
       <span class="ruby-keyword kw">begin</span>
@@ -187,9 +187,9 @@ We execute a specific command to god Could be &#8220;start&#8221;,
             </div>
             
             <div class="method">
-                <div class="title" id="M000013">
+                <div class="title" id="M000006">
                     
-                    <a name="M000013"></a><b>log</b>(name=nil, start=Time.at(0))
+                    <a name="M000006"></a><b>log</b>(name=nil, start=Time.at(0))
                     
                 </div>
                 
@@ -206,12 +206,12 @@ all the logs
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000013_source')" id="l_M000013_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000006_source')" id="l_M000006_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/95b9b10f13c65f1d9cbfacf3b68567852af0926b/lib/jesus/interface.rb#L50" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000013_source" class="dyn-source">
+                    <div id="M000006_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/interface.rb, line 50</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">log</span>(<span class="ruby-identifier">name</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">start</span>=<span class="ruby-constant">Time</span>.<span class="ruby-identifier">at</span>(<span class="ruby-value">0</span>))
       <span class="ruby-keyword kw">begin</span>
@@ -226,9 +226,9 @@ all the logs
             </div>
             
             <div class="method">
-                <div class="title" id="M000011">
+                <div class="title" id="M000004">
                     
-                    <a name="M000011"></a><b>status</b>()
+                    <a name="M000004"></a><b>status</b>()
                     
                 </div>
                 
@@ -244,12 +244,12 @@ We retrieve the processes by group
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000011_source')" id="l_M000011_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000004_source')" id="l_M000004_source">show</a>
                         
                         | <a href="http://github.com/dmathieu/jesus/blob/95b9b10f13c65f1d9cbfacf3b68567852af0926b/lib/jesus/interface.rb#L18" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000011_source" class="dyn-source">
+                    <div id="M000004_source" class="dyn-source">
                         <pre><span class="ruby-comment cmt"># File lib/jesus/interface.rb, line 18</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">status</span>
       <span class="ruby-keyword kw">begin</span>
