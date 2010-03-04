@@ -1,12 +1,10 @@
-require 'sinatra'
+require 'init'
+
 require 'rack/test'
 require 'spec'
 require 'mocha'
 require 'spec/autorun'
 require 'spec/interop/test'
-
-$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/../lib')
-require 'jesus/server'
 
 # set test environment
 set :environment, :test
