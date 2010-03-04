@@ -8,7 +8,7 @@ describe "God interface" do
   
   describe 'no mock' do
     it 'should get the server' do
-      @server.server.should be_kind_of DRb::DRbObject
+      @server.server.should be_kind_of(DRb::DRbObject)
     end
 
     it 'should fail because the server is not connected' do
