@@ -6,19 +6,13 @@ rescue LoadError
   Bundler.setup
 end
 
-require 'spec/rake/spectask'
-
-
 #
 # The rspec tasks
 #
+require 'rspec/core'
+require 'rspec/core/rake_task'
 task :default => :spec
-
-desc "Run all specs"
-Spec::Rake::SpecTask.new('spec') do |t|
-  t.spec_files = FileList['spec/**/*.rb']
-  t.spec_opts = ['-cfs']
-end
+RSpec::Core::RakeTask.new(:spec)
 
 #
 # SDoc
