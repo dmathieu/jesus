@@ -1,4 +1,4 @@
-source "http://gemcutter.org"
+source 'http://rubygems.org'
 #
 # Required on every environment
 #
