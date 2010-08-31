@@ -4,4 +4,4 @@ require 'rack/test'
 require 'rspec'
 require 'mocha'
 
-require 'jesus/spec'
+require 'support/app'
